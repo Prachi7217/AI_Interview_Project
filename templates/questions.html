@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Questions</title>
+</head>
+<body>
+
+<h1>Interview Questions</h1>
+
+<form method="POST">
+
+{% for q in questions %}
+
+<p>{{ q.QuestionText }}</p>
+
+<textarea name="answers" rows="4" cols="50"></textarea>
+
+<br><br>
+
+{% endfor %}
+
+<input type="submit" value="Submit Answers">
+
+</form>
+
+</body>
+</html>
